@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+  width: 500px;
+  height: 200px;
+  box-shadow: 1px 2px 2rem rgb(82, 81, 81);
+  margin: 200px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: .5rem 0;
+  background-color: #222;
+  border-radius: 6px;
+  position: relative;
+}
+#painel{
+  padding: 1rem 4rem;
+  font-size: 5rem;
+  font-family: Bebas Neue;
+  background-color: #300b13;
+  color: #0f700f;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.luz::before{
+  content: '';
+  border: solid  1px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  position: absolute; 
+  background-image: linear-gradient(to left,#611324, #6b6969);
+  opacity: .4;
+}
+#btnLuz{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  border-bottom: solid 4px #333;
+  border-right: solid 4px #333;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#btnLuz:active{
+  border-top: solid 4px #333;
+  border-left: solid 4px #333;
+}
+.botoes{
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 0;
+}
+.botoes button{
+  width: 45%;
+  height: auto;
+  padding: .4rem 0;
+  font-size: 1.3rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+}
